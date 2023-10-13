@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+
+<body>
+
+    <main class="d-flex justify-content-center d">
+        <form action="" method="post">
+            <label for="nmTextoInicial">Digite o texto de entrada</label>
+            <textarea name="nmTextoInicial" id="idTextArea" cols="30" rows="10"></textarea>
+
+            <label for="cifrado">Cifrado</label>
+            <input type="radio" name="nmTxEscolha" id="idCifrado" value="cifrado">
+
+            <label for="decifrado">Decifrado</label>
+            <input type="radio" name="nmTxEscolha" id="idDecifrado" value="decifrado">
+
+            <label for="cifra">Digite a cifra</label>
+            <input type="text" name="nmCifra" id="idCifra" maxlength="1">
+            <output id="idSaida"></output>
+
+            <input type="button" id="idBtnCifrar" value="Cifrar">
+        </form>
+    </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>
