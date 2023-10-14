@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Desafio 1</title>
 </head>
 
 <body>
+    <div class="container">
+        <main class="box">
+            <h1>Cifra de César</h1>
+            <form action="" method="post" class="form">
 
-    <main class="d-flex justify-content-center d">
-        <form action="" method="post">
-            <label for="nmTextoInicial">Digite o texto de entrada</label>
-            <textarea name="nmTextoInicial" id="idTextArea" cols="30" rows="10"></textarea>
+                <textarea name="nmTextoInicial" id="idTextArea" cols="30" rows="10"
+                    placeholder="Digite o texto para cifrar!"></textarea>
 
-            <label for="cifrado">Cifrado</label>
-            <input type="radio" name="nmTxEscolha" id="idCifrado" value="cifrado">
 
-            <label for="decifrado">Decifrado</label>
-            <input type="radio" name="nmTxEscolha" id="idDecifrado" value="decifrado">
+                <div class="divInputRadio">
+                    <input type="radio" name="nmTxEscolha" id="idCifrado" value="cifrado">
+                    <label for="cifrado">Cifrado</label>
 
-            <label for="cifra">Digite a cifra</label>
-            <input type="text" name="nmCifra" id="idCifra" maxlength="1">
-            <output id="idSaida"></output>
+                    <input type="radio" name="nmTxEscolha" id="idDecifrado" value="decifrado">
+                    <label for="decifrado">Decifrado</label>
 
-            <input type="button" id="idBtnCifrar" value="Cifrar">
-        </form>
-    </main>
+                </div>
+
+                <div>
+                    <input type="text" name="nmCifra" id="idCifra" maxlength="1" placeholder="Digite o valor da chave">
+                    <input type="button" id="idBtnCifrar" value="Cifrar">
+                </div>
+
+                <output id="idSaida"></output>
+
+            </form>
+        </main>
+    </div>
 </body>
 
 <script src="index.js"></script>
